@@ -14,8 +14,8 @@ def test():
     img = Image.open(image_bytes)
     response = {'message': 'image received. size={}x{}'.format(img.size[0], img.size[1])}
     response = json.dumps(response)
-    return Response(response=response, status=200, mimetype="application/json")
+    return Response(response=response, status=200, mimetype='application/json')
 
 # start flask app
-app.run(host="0.0.0.0", port=5000, debug=True)
+app.run(host='0.0.0.0', port=5000, debug=True)
 
